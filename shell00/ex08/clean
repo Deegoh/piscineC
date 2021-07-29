@@ -1,0 +1,2 @@
+#!/bin/env sh
+find . -type f -name "*~" -delete -print -o -name "#*#" -delete -print

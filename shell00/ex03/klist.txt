@@ -1,0 +1,5 @@
+Credentials cache: API:A0C715CB-3C1B-47C2-A00D-0FEB7FE9C0AA
+        Principal: tpinto-m@42LAUSANNE.CH
+
+  Issued                Expires             Flags    Principal
+Jul  5 14:05:11 2021  Jul  6 00:05:03 2021  FPIA   krbtgt/42LAUSANNE.CH@42LAUSANNE.CH
