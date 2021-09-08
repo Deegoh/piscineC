@@ -2,3 +2,6 @@
 **/.vscode
 **/.editorconfig
 **/*.exe
+libft-unit-test/
+libft/a.out
+libft/test.c
