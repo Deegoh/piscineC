@@ -4,6 +4,7 @@
 # include <stdio.h>	
 # include <unistd.h>	
 
+size_t	ft_strlcat(char	*dst, char	*src, size_t size);
 size_t	ft_strlcpy(char	*dst, char	*src, size_t size);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strrchr(char *str, int c);

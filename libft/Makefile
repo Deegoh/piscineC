@@ -6,14 +6,15 @@
 #    By: tpinto-m <tpinto-m@student.42lausanne      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/03 00:06:20 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/04 19:26:00 by deegoh           ###   ########.fr        #
+#    Updated: 2021/10/05 15:07:23 by deegoh           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_strlcpy.c\
+SRC = ft_strlcat.c\
+      ft_strlcpy.c\
       ft_strncmp.c\
       ft_strlen.c\
       ft_isalpha.c\
