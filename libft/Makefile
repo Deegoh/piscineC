@@ -6,17 +6,18 @@
 #    By: tpinto-m <tpinto-m@student.42lausanne      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/03 00:06:20 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/05 15:07:23 by deegoh           ###   ########.fr        #
+#    Updated: 2021/10/07 18:17:10 by deegoh           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_strlcat.c\
+SRC = ft_strnstr.c\
+	  ft_strlcat.c\
       ft_strlcpy.c\
       ft_strncmp.c\
-      ft_strlen.c\
+	  ft_strlen.c\
       ft_isalpha.c\
       ft_isdigit.c\
       ft_isalnum.c\
@@ -25,7 +26,11 @@ SRC = ft_strlcat.c\
       ft_toupper.c\
       ft_tolower.c\
       ft_strchr.c\
-      ft_strrchr.c
+      ft_strrchr.c\
+	  ft_memcpy.c\
+	  ft_bzero.c\
+	  ft_memset.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
