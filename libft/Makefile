@@ -6,7 +6,7 @@
 #    By: tpinto-m <tpinto-m@student.42lausanne      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/03 00:06:20 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/07 18:17:10 by deegoh           ###   ########.fr        #
+#    Updated: 2021/10/08 11:39:11 by deegoh           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC = ft_strnstr.c\
       ft_tolower.c\
       ft_strchr.c\
       ft_strrchr.c\
+	  ft_memmove.c\
 	  ft_memcpy.c\
 	  ft_bzero.c\
 	  ft_memset.c
