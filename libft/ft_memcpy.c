@@ -6,7 +6,7 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 19:08:09 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/11 19:24:27 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/11 22:45:19 by deegoh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	*ft_memcpy(void *dst, void *src, size_t n)
 {
-	(void)src;
-	(void)n;
+	ft_memmove(dst, src, n);
 	return (dst);
 }
