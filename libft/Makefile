@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tpinto-m <tpinto-m@student.42lausanne      +#+  +:+       +#+         #
+#    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/03 00:06:20 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/08 11:39:11 by deegoh           ###   ########.fr        #
+#    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
+#    Updated: 2021/10/11 19:01:06 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
 SRC = ft_strnstr.c\
