@@ -6,7 +6,7 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 19:08:30 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/11 19:08:31 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/12 12:32:23 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memset(void *str, int c, size_t n)
 
 	i = -1;
 	while (++i < n)
-		((char *)str)[i] = c;
+		((unsigned char *)str)[i] = c;
 	return (str);
 }
