@@ -6,14 +6,16 @@
 #    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/12 18:01:18 by tpinto-m         ###   ########.fr        #
+#    Updated: 2021/10/13 14:13:52 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_atoi.c\
+SRC = ft_strdup.c\
+	  ft_calloc.c\
+	  ft_atoi.c\
 	  ft_strnstr.c\
 	  ft_strlcat.c\
       ft_strlcpy.c\
@@ -42,7 +44,7 @@ all: $(NAME)
 
 $(NAME):
 	$(CC) $(FLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+	ar -rc $(NAME) $(OBJ)
 
 clean:
 	rm -rf $(OBJ)

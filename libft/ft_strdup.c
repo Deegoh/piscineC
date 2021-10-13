@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strrdup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 19:07:33 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/13 15:29:13 by tpinto-m         ###   ########.fr       */
+/*   Created: 2021/10/13 12:39:07 by tpinto-m          #+#    #+#             */
+/*   Updated: 2021/10/13 15:13:47 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strdup(const char *s1)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	int		slen;
+	int		i;
+	char	*str;
+
+	slen = ft_strlen((char *)s1);
+	i = -1;
+	str = (char *)malloc(slen + 1);
+	if (!str)
+		return (NULL);
+	while (++i < slen)
+		str[i] = s1[i];
+	str[i] = '\0';
+	return (str);
 }

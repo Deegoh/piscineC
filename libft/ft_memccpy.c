@@ -6,13 +6,13 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:50:00 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/12 15:50:04 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/13 15:47:47 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, void *src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t	i;
 
