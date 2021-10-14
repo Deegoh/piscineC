@@ -6,7 +6,7 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 19:10:28 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/13 15:49:45 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/14 11:10:37 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <unistd.h>	
 # include <stdlib.h>
 
+char    *ft_strtrim(char const *s1, char const *set);
+char    *ft_strjoin(char const  *s1, char const *s2);
+char    *ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *str);

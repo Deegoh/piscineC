@@ -6,14 +6,17 @@
 #    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/13 14:13:52 by tpinto-m         ###   ########.fr        #
+#    Updated: 2021/10/14 11:10:41 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_strdup.c\
+SRC = ft_strtrim.c\
+	  ft_strjoin.c\
+	  ft_substr.c\
+	  ft_strdup.c\
 	  ft_calloc.c\
 	  ft_atoi.c\
 	  ft_strnstr.c\
