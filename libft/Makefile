@@ -13,7 +13,8 @@
 CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_strtrim.c\
+SRC = ft_split.c\
+	  ft_strtrim.c\
 	  ft_strjoin.c\
 	  ft_substr.c\
 	  ft_strdup.c\
