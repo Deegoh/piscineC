@@ -1,38 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/15 11:56:29 by tpinto-m          #+#    #+#             */
+/*   Updated: 2021/10/15 15:00:32 by tpinto-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int     ft_count_words(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
-    int count;
+	char	**res;
+	int		i;
+	int		split;
+	int		j;
 
-    count = 1;
-    while (*s)
-    {
-        if (*s == c)
-            count++;
-        s++;
-    }
-    return (count);
-}
-
-char    **ft_split(char const *s, char c)
-{
-    int words;
-    char **res;
-    int i;
-
-    words = ft_count_words(s, c);
-    res = malloc(sizeof(char *) * (words + 1));
-    i = 0;
-    while (i < words)
-    {
-        res[i] = ft_strdup();
-        i++;
-    }
-    return (res);
-}
-
-int main(void)
-{
-    printf("%d", ft_count_words("Hello world", ' '));
-    return (0);
+	if (!s || !c)
+		return (NULL);
+	i = 0;
+	split = 1;
+	while (s[i++])
+	{
+		if (s[i] == c)
+			split++;
+	}
+	res = malloc(split + 1);
+	if (!res)
+		return NULL;
+	j = 0;
+	i = 0;
+	while (j < split && s[i])
+	{
+		if (s[i] == c)
+		{
+			i++;
+			j++;
+			break;
+		}
+		res[j] = s[i++];
+	}
+	res[split] = NULL;
+	return (res);
 }
