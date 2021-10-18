@@ -6,14 +6,20 @@
 #    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/15 11:59:28 by tpinto-m         ###   ########.fr        #
+#    Updated: 2021/10/18 18:55:48 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_split.c\
+SRC = ft_putendl_fd.c\
+	  ft_putstr_fd.c\
+	  ft_putchar_fd.c\
+	  ft_striteri.c\
+	  ft_strmapi.c\
+	  ft_itoa.c\
+	  ft_split.c\
 	  ft_strtrim.c\
 	  ft_strjoin.c\
 	  ft_substr.c\
@@ -40,8 +46,7 @@ SRC = ft_split.c\
 	  ft_memccpy.c\
 	  ft_memcpy.c\
 	  ft_bzero.c\
-	  ft_memset.c\
-	  ft_isspace.c
+	  ft_memset.c
 
 OBJ = $(SRC:.c=.o)
 
