@@ -6,14 +6,15 @@
 #    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/18 18:55:48 by tpinto-m         ###   ########.fr        #
+#    Updated: 2021/10/19 17:27:02 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 NAME = libft.a
 FLAGS = -Wall -Wextra -Werror
-SRC = ft_putendl_fd.c\
+SRC = ft_putnbr_fd.c\
+	  ft_putendl_fd.c\
 	  ft_putstr_fd.c\
 	  ft_putchar_fd.c\
 	  ft_striteri.c\
@@ -48,13 +49,26 @@ SRC = ft_putendl_fd.c\
 	  ft_bzero.c\
 	  ft_memset.c
 
+BONUS = ft_lstclear.c\
+		ft_lstdelone.c\
+		ft_lstadd_back.c\
+		ft_lstlast.c\
+		ft_lstsize.c\
+		ft_lstadd_front.c\
+		ft_lstnew.c 
+
 OBJ = $(SRC:.c=.o)
+OBJBONUS = $(BONUS:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): bonus
 	$(CC) $(FLAGS) -c $(SRC)
 	ar -rc $(NAME) $(OBJ)
+
+bonus:
+	$(CC) $(FLAGS) -c $(BONUS)
+	ar -rc $(NAME) $(OBJBONUS)
 
 clean:
 	rm -rf $(OBJ)
@@ -69,5 +83,3 @@ so:
 	rm -rf libft.so
 	$(CC) -fPIC $(FLAGS) -c $(SRC)
 	$(CC) -shared -o libft.so $(OBJ)
-bonus:
-	@echo "hello world!"

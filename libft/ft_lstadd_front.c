@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 19:08:09 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/19 17:11:06 by tpinto-m         ###   ########.fr       */
+/*   Created: 2021/10/19 11:29:27 by tpinto-m          #+#    #+#             */
+/*   Updated: 2021/10/19 14:26:29 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_lstadd_front(t_list **alst, t_list *new)
 {
-	ft_memmove(dst, src, n);
-	return (dst);
+	new->next = *alst;
+	*alst = new;
+	return ;
 }
