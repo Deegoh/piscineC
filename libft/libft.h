@@ -6,7 +6,7 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 19:10:28 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/19 17:29:45 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/20 11:44:16 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void(*del)(void *));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstadd_back(t_list **alst, t_list *new);

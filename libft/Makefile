@@ -6,7 +6,7 @@
 #    By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 18:54:17 by tpinto-m          #+#    #+#              #
-#    Updated: 2021/10/19 17:27:02 by tpinto-m         ###   ########.fr        #
+#    Updated: 2021/10/20 10:23:24 by tpinto-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,9 @@ SRC = ft_putnbr_fd.c\
 	  ft_bzero.c\
 	  ft_memset.c
 
-BONUS = ft_lstclear.c\
+BONUS = ft_lstmap.c\
+		ft_lstiter.c\
+		ft_lstclear.c\
 		ft_lstdelone.c\
 		ft_lstadd_back.c\
 		ft_lstlast.c\
@@ -59,6 +61,8 @@ BONUS = ft_lstclear.c\
 
 OBJ = $(SRC:.c=.o)
 OBJBONUS = $(BONUS:.c=.o)
+
+.PHONY: all clean fclean re bonus so
 
 all: $(NAME)
 
@@ -72,6 +76,7 @@ bonus:
 
 clean:
 	rm -rf $(OBJ)
+	rm -rf $(OBJBONUS)
 
 fclean: clean
 	rm -rf $(NAME)

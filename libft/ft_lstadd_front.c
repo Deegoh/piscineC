@@ -6,7 +6,7 @@
 /*   By: tpinto-m <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 11:29:27 by tpinto-m          #+#    #+#             */
-/*   Updated: 2021/10/19 14:26:29 by tpinto-m         ###   ########.fr       */
+/*   Updated: 2021/10/20 09:58:18 by tpinto-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {
+	if (*alst)
 	new->next = *alst;
 	*alst = new;
 	return ;
